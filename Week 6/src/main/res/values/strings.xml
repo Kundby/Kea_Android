@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Kea_week6</string>
+    <string name="contact_address">Hedeager 5\n8200 Aarhus N\nDenmark</string>
+    <string name="contact_phone">+45 89 34 80 00</string>
+    <string name="contact_hours">Monday to Thursday: 8.30 AM to 4.30 PM\nFriday: 8.30 AM to 4.00PM</string>
+</resources>
