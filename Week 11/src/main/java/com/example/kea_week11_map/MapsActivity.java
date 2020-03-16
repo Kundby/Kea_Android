@@ -75,8 +75,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         String text = input.getText().toString();
-                        mMap.addMarker(new MarkerOptions().position(marker).title(text));
-                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(marker, 4));
                         Marker markerToFirebase = new Marker(longtitude, latitude, text);
                         addMarker(markerToFirebase);
 
