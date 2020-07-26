@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/but_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Add Log"
+            android:textColor="#0500FF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Enter Headline Below"
+            android:textColor="#000"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="Headline"
+            android:inputType="textPersonName"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            app:layout_constraintStart_toStartOf="@+id/tv_headline"
+            app:layout_constraintTop_toBottomOf="@+id/tv_headline" />
+
+        <TextView
+            android:id="@+id/tv_header_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Enter Log Below"
+            android:textColor="#000"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_headline" />
+
+        <EditText
+            android:id="@+id/et_log"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Log Details"
+            android:inputType="textMultiLine"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            app:layout_constraintStart_toStartOf="@+id/et_headline"
+            app:layout_constraintTop_toBottomOf="@+id/tv_header_log" />
+
+        <ImageView
+            android:id="@+id/iv_log"
+            android:layout_width="165dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_log"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/but_img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Add Image"
+            app:layout_constraintEnd_toEndOf="@+id/iv_log"
+            app:layout_constraintStart_toStartOf="@+id/iv_log"
+            app:layout_constraintTop_toBottomOf="@+id/iv_log" />
+
+        <Button
+            android:id="@+id/but_map_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:text="Add Location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/but_img_add" />
+
+        <Button
+            android:id="@+id/but_img_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Delete Image"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/but_img_add"
+            app:layout_constraintStart_toStartOf="@+id/but_img_add"
+            app:layout_constraintTop_toBottomOf="@+id/but_img_add"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/but_map_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Delete Location"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/but_map_add"
+            app:layout_constraintStart_toStartOf="@+id/but_map_add"
+            app:layout_constraintTop_toBottomOf="@+id/but_map_add"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
